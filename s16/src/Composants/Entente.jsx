@@ -1,6 +1,4 @@
 export default function Entete(props) {
-
-
-
-    return <h1>Hello world {props.nom}</h1>
+    const title = '';
+    return <h1>{title === '' ? 'Click an animal for a fun fact': title}</h1>
 }
