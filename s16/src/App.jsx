@@ -1,9 +1,12 @@
+import Entete from "./Composants/Entente";
+import { x } from "./data";
 
 export default function App() {
 
   return (
     <>
-      <h1>Hello World</h1>    
+      <Entete nom="David"/>
+      <p>Le compteur vaut {x}</p>
     </>
   )
 }
