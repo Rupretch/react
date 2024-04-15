@@ -4,7 +4,7 @@
 import { signal } from "@preact/signals-react";
 
 // On crée un signal pour une variable text (initialisée à "")
-const text = signal("");
+const text = signal("Text mais avec signal");
 
 // On crée une fonction pour gérer l'ajout d'un élément à la liste
 function handleSubmitTodo() {

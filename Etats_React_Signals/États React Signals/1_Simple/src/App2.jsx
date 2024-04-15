@@ -8,14 +8,15 @@ function App2() {
     // avec la fonction useState qui initialise la variable à "Texte original"
     const [text, setText] = useState("Texte original");
 
-    // On crée une fonction pour gérer l'ajout d'un élément à la liste
+    // On crée une fonction pour gérer la mise a jour dde élément à la liste
     function handleSubmitTodo() {
         const item = document.getElementById('inputForNewTodo');
         setText(item.value);
         item.value = '';
     }
 
-    return (<>
+    return (
+    <>
         <div className="container">
             <div className="form-row">
                 <label htmlFor="inputForNewTodo" className="form-label">Champ pour l&apos;ajout d&apos;événement à la &apos;Todo&apos; Liste</label>
@@ -33,7 +34,8 @@ function App2() {
                 <li>{text}</li>
             </ul>
         </div>
-    </>);
+    </>
+    );
 }
 
 export default App2;
