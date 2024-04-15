@@ -2,50 +2,32 @@ import Entete from "./Composants/Entente";
 import animals from "./Animals";
 import "./App.css";
 import Background from "./Composants/Background";
+import ImageAnimal from "./Composants/ImageAnimal";
+import Fait from "./Composants/Fait";
+import { useState  } from "react"; // pour le contenu de fait
 
 export default function App() {
 
+  const [fact, setFact] = useState('');
   
-  const images = [];
-
-  for (let animal in animals) {
-    let img = (
-      <img
-      key={animal}
-      className="animal" 
-      src={animals[animal].image} 
-      alt={animal} 
-      aria-label={animal}
-      role="button"
-      onClick={displayFact}
-      />
-    );
-    images.push(img);
+  function handleClickToUpdateFact(e) {
+    const facts = animals[e.target.alt].facts;
+    const randomIndex = Math.floor(Math.random() * facts.length);
+    const newFact = facts[randomIndex];
+    setFact(newFact);
   }
-
-  // console.log(images);
-
-  const animalFacts = (
-    <div>
-      <Entete/>
-      <Background/>
-      <div className="animals">
-        {images}
-      </div>
-      <p id="fact"></p>
-    </div>
-  );
 
   return (
     <>
-      {animalFacts}
+      <Entete/>
+      <Background/>
+      <div className="animals">
+      {Object.keys(animals).map((animal) => (
+        <ImageAnimal key={animal} animal={animal} onClick={handleClickToUpdateFact}/>  
+      ))}
+      </div>
+      <Fait fait={fact}/>
     </>
   )
 }
 
-function displayFact(e) {
-  const facts = animals[e.target.alt].facts;
-  const randomIndex = Math.floor(Math.random() * facts.length);
-  const fact = facts[randomIndex];
-  document.getElementById('fact').innerText = fact;
-}

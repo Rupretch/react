@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>S17 - React + MVC [exemple d'affichage]</title>
+</head>
+
+<body>
+    <div id="root">
+        <h1 class="h1 p-5">Liste des capitales avec le drapeau de leur pays</h1>
+        <div class="container d-flex flex-wrap justify-content-evenly gap-3">
+            <div class="card" style="width: 18rem; height: 18rem;">
+                <img src="https://flagcdn.com/w320/gy.png" class="card-img-top" style="height: 13rem;">
+                <div class="card-body">
+                    <p class="card-text">Voici le drapeau du pays ayant comme capitale : Georgetown</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 18rem;">
+                <img src="https://flagcdn.com/w320/pt.png" class="card-img-top" style="height: 13rem;">
+                <div class="card-body">
+                    <p class="card-text">Voici le drapeau du pays ayant comme capitale : Lisbon</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 18rem;">
+                <img src="https://flagcdn.com/w320/ci.png" class="card-img-top" style="height: 13rem;">
+                <div class="card-body">
+                    <p class="card-text">Voici le drapeau du pays ayant comme capitale : Yamoussoukro</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 18rem;">
+                <img src="https://flagcdn.com/w320/iq.png" class="card-img-top" style="height: 13rem;">
+                <div class="card-body">
+                    <p class="card-text">Voici le drapeau du pays ayant comme capitale : Baghdad</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/Controller.jsx"></script>
+</body>
