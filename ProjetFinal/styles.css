@@ -10841,7 +10841,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/") no-repeat center center;
+  background: url("public/img/Magic-The-Gathering-Nicol-Bolas-Dragon-God-And-Yu-Gi-Oh-Blue-Eyes-White-Dragon.avif") ;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -10872,9 +10872,16 @@ header.masthead h1, header.masthead .h1 {
 .showcase .showcase-text {
   padding: 3rem;
 }
-.showcase .showcase-img {
+.showcase .showcase-img1 {
   min-height: 30rem;
   background-size: cover;
+  background-image: url(/img/yugioh.avif);
+}
+.showcase .showcase-img2 {
+  min-height: 30rem;
+  background-size: cover;
+  background-image: url(/img/mtg-modern-horizons-2-cards.webp);
+
 }
 @media (min-width: 768px) {
   .showcase .showcase-text {
