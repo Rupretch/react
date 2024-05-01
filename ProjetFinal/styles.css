@@ -10841,7 +10841,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("public/img/Magic-The-Gathering-Nicol-Bolas-Dragon-God-And-Yu-Gi-Oh-Blue-Eyes-White-Dragon.avif") ;
+  background: url("/img/Magic-The-Gathering-Nicol-Bolas-Dragon-God-And-Yu-Gi-Oh-Blue-Eyes-White-Dragon.avif") ;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
