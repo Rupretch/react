@@ -7,7 +7,7 @@ export default function Navbar(){
                 <Link className="navbar-brand" to="/">Projet API</Link>
                 <div className="nav-item dropdown dropstart btn-group">
                     <button className="dropdown-toggle btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Pages
+                        <img src="\img\iconCarte.png" alt="" height="30px"/>
                     </button>
                     <ul className="dropdown-menu">
                         <li><Link className="dropdown-item" to="/">Acceuil</Link></li>

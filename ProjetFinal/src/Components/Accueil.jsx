@@ -22,8 +22,8 @@ export default function Accueil() {
                         <div className="col-lg-4">
                             <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                                 <div className="features-icons-icon d-flex"><i className="fa-solid fa-tablet-screen-button m-auto text-primary"></i></div>
-                                <Link to="/archive2"><h3>API Magic the Gathering</h3></Link>
-                                <p className="lead mb-0"></p>
+                                <h3>API Magic the Gathering</h3>
+                                <p className="lead mb-0"> Click <Link to="/archive2">ici</Link> pour voir le répertoire de carte</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -34,8 +34,8 @@ export default function Accueil() {
                         <div className="col-lg-4">
                             <div className="features-icons-item mx-auto mb-0 mb-lg-3">
                                 <div className="features-icons-icon d-flex"><i className="fa-solid fa-tablet m-auto text-primary"></i></div>
-                                <Link to="/archive1"><h3>API Yu-gi-oh</h3></Link>
-                                <p className="lead mb-0"></p>
+                                <h3>API Yu-gi-oh</h3>
+                                <p className="lead mb-0">Click <Link to="/archive1">ici</Link> pour voir le répertoire de carte</p>
                             </div>
                         </div>
                     </div>
